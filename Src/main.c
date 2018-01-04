@@ -63,7 +63,7 @@ static void MX_GPIO_Init(void);
 /* USER CODE BEGIN 0 */
 
 void init(void) {
-	/* do nothing, yet */
+    /* do nothing, yet */
 }
 
 void loop(void) {
@@ -73,11 +73,11 @@ void loop(void) {
     HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
     HAL_Delay(500);
 */
-	if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET) {
-		HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-	}
+    if(HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13) == GPIO_PIN_RESET) {
+        HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    }
 
-	HAL_Delay(100);
+    HAL_Delay(100);
 }
 
 /* USER CODE END 0 */
