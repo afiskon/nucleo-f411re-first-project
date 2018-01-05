@@ -198,7 +198,11 @@ clean:
 	-rm -fR .dep $(BUILD_DIR)
   
 flash: all
-	st-flash write build/$(TARGET).bin 0x8000000
+	st-flash --reset write build/$(TARGET).bin 0x8000000
+
+erase:
+	st-flash --reset erase
+
 #######################################
 # dependencies
 #######################################
