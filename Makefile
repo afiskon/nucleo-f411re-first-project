@@ -23,7 +23,7 @@ FIRMWARE = $(HOME)/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0
 # debug build?
 DEBUG = 1
 # optimization
-OPT = -Og
+OPT = -Og -Wall
 
 
 #######################################
