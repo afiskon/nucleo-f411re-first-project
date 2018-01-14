@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = nucleo-f411re-project
+TARGET = main
 FIRMWARE = $(HOME)/STM32Cube/Repository/STM32Cube_FW_F4_V1.18.0
 
 
